@@ -1,0 +1,31 @@
+@charset "UFT-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fonte1: 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+    --fonte2: 'Passion One', 'Cursive';
+    --fonte3: 'Sriracha', 'Cursive';
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    font-variant: small-caps;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-variant-caps: small-caps;
+    font-family: var(--fonte2);
+}
