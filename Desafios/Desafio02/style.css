@@ -10,11 +10,17 @@
     --fonte3: 'Sriracha', 'Cursive';
 }
 
-html, body {
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
     min-height: 100vh;
     background-color: darkgray;
     font-family: var(--fonte1);
 }
+
 header{
     background-color: black;
     color: white;
@@ -22,10 +28,70 @@ header{
 }
 
 header > h1{
+    padding-top: 50px;
     font-variant: small-caps;
-    font-variant-ligatures: normal;
-    font-variant-numeric: normal;
-    font-variant-east-asian: normal;
-    font-variant-caps: small-caps;
     font-family: var(--fonte2);
+    font-size: 10vw;
+
+}
+
+header > p{
+    padding-bottom: 50px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(53, 53, 53);
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.507);
+}
+
+section#img01{
+    background-image: url('../Desafio02/imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02{
+    background-image: url('../Desafio02/imagens/background002.jpg');
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
